@@ -1,0 +1,240 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    caret-color: black;
+    background-image: url("https://64.media.tumblr.com/32414db4578ca95101dbcde6a5dbaac4/tumblr_mp55a4K8MK1s8e1qno1_500.gif");
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed;
+    
+}
+/* http://2.bp.blogspot.com/-TI7Ff8dYk8Y/Un-F8LMWcqI/AAAAAAABsFw/z4WhO1m-ZD0/s1600/Paisajes+de+terror+%252811%2529p.gif */
+/* https://64.media.tumblr.com/32414db4578ca95101dbcde6a5dbaac4/tumblr_mp55a4K8MK1s8e1qno1_500.gifv */
+/* http://1.bp.blogspot.com/--f-Fs3j_-lg/UPRcuCALKhI/AAAAAAAAIl8/UjQBDBjJenU/s640/image%255B3%255D%2Be.png */
+
+
+
+
+.mainContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.header {
+    display: flex;
+    width: 100vw;
+    height: 70px;
+    background-color: black
+}
+
+.header img {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    height: 70px;
+    display: inline-block;
+}
+
+.header h1 {
+    width: 100%;
+    text-align: center;
+    color: lightgray;
+}
+
+.imgContainer {
+    /* border-style: solid;
+    border-width: 2px;
+    border-color: black; */
+    background-color:white;
+    margin-top: 5vh;
+    border-radius: 15px;
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+
+    transition: background-image 600ms ease-in-out;
+    
+}
+
+.palabraEscondida {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 10px;
+    height: 70px;
+
+    width: 90vw;
+    max-width: 800px;
+    padding: 5px 8px;
+    background-color: black;
+}
+
+
+.letterContainer {
+
+/*     border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 5px; */
+
+    
+    width: 100vw;
+    max-width: 800px;
+    padding: 2vw;
+    margin: 1vw;
+
+   /*  display: grid;
+    
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(13, 1fr); */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vw;
+    
+
+}
+
+
+
+.hiddenLetter {
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color:gray;
+    
+    width: 30px;
+    height: 30px;
+}
+
+.hiddenLetterGuessed {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color:black;
+    color: gray;
+    
+    width: 30px;
+    height: 30px;
+}
+
+.butttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 10vh;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    height: 60px;
+    width: 60px;
+
+    border-radius: 5px;
+    border-style: none;
+    font-size: x-large;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.buttonDisabled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    height: 60px;
+    width: 60px;
+
+    border-radius: 5px;
+    border-style: none;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.button:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 200ms;
+    background-color: black;
+    color: gray;
+}
+
+.message {
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+
+
+.reset {
+    height: 50px;
+    width: 100px;
+    
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 500;
+    font-size: large;
+    cursor: pointer;
+}
+
+
+
+.reset:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 200ms;
+    background-color:black;
+    color: gray;
+}
+
+.title {
+    margin: 0px 0px 10px 0px;
+    opacity: 80%;
+    background-color: black;
+    color: gray;
+    width: 100vw;
+    height: 35px;
+    text-align: center;
+    padding-top: 20px;
+}
